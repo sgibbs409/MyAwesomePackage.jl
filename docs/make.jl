@@ -17,6 +17,6 @@ makedocs(
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
 # for more information.
 deploydocs(
-    repo = "https://github.com/sgibbs409/MyAwesomePackage.jl.git",
+    repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
     devbranch = "main"
 )
