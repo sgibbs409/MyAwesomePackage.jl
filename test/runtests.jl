@@ -7,4 +7,4 @@ greeting = MyAwesomePackage.greet()
 
 @test out == 5
 
-@test greeting == "Hello World!"
+@test greeting == nothing
