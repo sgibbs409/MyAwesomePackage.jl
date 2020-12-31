@@ -18,5 +18,5 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
-    versions = ["stable" => "v^", "v#.#", devurl => devurl],
+    versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
 )
