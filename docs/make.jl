@@ -2,7 +2,7 @@ using Documenter
 using MyAwesomePackage
 
 
-push!(LOAD_PATH, "../src/")
+#push!(LOAD_PATH, "../src/")
 makedocs(
     sitename = "MyAwesomePackage.jl Documentation",
     pages = [
@@ -19,5 +19,6 @@ makedocs(
 deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
     devbranch="main",
-    versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
+    #versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
+    versions = ["v#.#", "dev" => "v^"],
 )
