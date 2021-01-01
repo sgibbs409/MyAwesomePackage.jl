@@ -73,3 +73,4 @@ jobs:
           middle_name: The
           Last_Name: Octocat
       - run: env
+        name: Print Environment
