@@ -76,3 +76,7 @@ jobs:
           Last_Name: Octocat
       - run: env
         name: Print Environment
+      - name: Print Event File
+        run: cat "$GITHUB_EVENT_PATH"
+      - name: LS Workspace
+        run: ls "$GITHUB_WORKSPACE"
