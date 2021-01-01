@@ -6,3 +6,5 @@
 [![](https://img.shields.io/badge/docs-dev-blue.svg)](https://sgibbs409.github.io/MyAwesomePackage.jl/dev)
 
 My awesome julia package
+
+Go Seahawks!
