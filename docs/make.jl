@@ -20,5 +20,6 @@ deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
     devbranch="main",
     #versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
-    versions = ["v#.#", "dev" => "v^"],
+    #versions = ["v#.#", "dev" => "v^"],
+    versions = ["stable" => "v^", "v#.#"]
 )
