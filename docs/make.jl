@@ -1,4 +1,4 @@
-using Documenter, DocumenterTools
+using Documenter
 using MyAwesomePackage
 
 if haskey(ENV, "DOCSARGS")
