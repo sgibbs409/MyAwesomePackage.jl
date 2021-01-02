@@ -9,6 +9,7 @@ end
 
 #push!(LOAD_PATH, "../src/")
 makedocs(
+    modules = [MyAwesomePackage],
     sitename = "MyAwesomePackage.jl Documentation",
     pages = [
         "Index" => "index.md",
