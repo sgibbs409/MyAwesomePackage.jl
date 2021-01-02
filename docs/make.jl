@@ -11,7 +11,7 @@ makedocs(
     ],
 
     format = Documenter.HTML(
-        prettyurls = false
+        prettyurls = true
         # prettyurls = !("local" in ARGS)
     )
 )
@@ -21,9 +21,10 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
-    devbranch="main",
+    #devbranch="main",
     target="build",
+    push_preview = true,
     #versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
     #versions = ["v#.#", "dev" => "v^"],
-    versions = ["stable" => "v^", "v#.#"]
+    #versions = ["stable" => "v^", "v#.#"]
 )
