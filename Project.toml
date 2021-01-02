@@ -1,7 +1,7 @@
 name = "MyAwesomePackage"
 uuid = "d66e989c-56b5-466a-9a46-5f77e9ad1458"
 authors = ["Spencer <2455247+sgibbs409@users.noreply.github.com>"]
-version = "0.0.1"
+version = "1.0.0"
 
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
