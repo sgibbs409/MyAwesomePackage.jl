@@ -7,7 +7,7 @@ More details about MyAwesomePackage
 """
 module MyAwesomePackage
 
-export plusTwo, plusOne
+export plusTwo, plusOne, plusThree
 
 
 
@@ -51,8 +51,10 @@ A more detailed explaination can go here.
 julia> five = plusOne(3)
 4
 ```
-""" 
+"""
 plusOne(x) = x + 1
+
+plusThree(x) = x + 3
 
 greet() = print("Hello World!")
 
