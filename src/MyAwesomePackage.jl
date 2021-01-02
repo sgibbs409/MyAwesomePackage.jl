@@ -7,7 +7,8 @@ More details about MyAwesomePackage
 """
 module MyAwesomePackage
 
-export plusTwo
+export plusTwo, plusOne
+
 
 
 """
@@ -30,6 +31,28 @@ julia> five = plusTwo(3)
 ```
 """
 plusTwo(x) = x + 2
+
+
+"""
+    plusOne(x)
+
+Sum the numeric "1" to whatever it receives as input.
+
+A more detailed explaination can go here.
+
+# Arguments
+* `x`: The amount to which we want to add 1
+
+# Notes
+* Notes can go here
+
+# Examples
+```julia
+julia> five = plusOne(3)
+4
+```
+""" 
+plusOne(x) = x + 1
 
 greet() = print("Hello World!")
 
