@@ -1,6 +1,11 @@
-using Documenter
+using Documenter, DocumenterTools
 using MyAwesomePackage
 
+if haskey(ENV, "DOCSARGS")
+    for arg in split(ENV["DOCSARGS"])
+        (arg in ARGS) || push!(ARGS, arg)
+    end
+end
 
 #push!(LOAD_PATH, "../src/")
 makedocs(
@@ -11,9 +16,13 @@ makedocs(
     ],
 
     format = Documenter.HTML(
-        prettyurls = true
-        # prettyurls = !("local" in ARGS)
-    )
+        #prettyurls = true
+        canonical = "https://sgibbs409.github.io/MyAwesomePackage.jl/stable/",
+        prettyurls = !("local" in ARGS)
+    ),
+
+    strict = !("strict=false" in ARGS),
+    doctest = ("doctest=only" in ARGS) ? :only : true,
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
