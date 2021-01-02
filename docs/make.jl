@@ -21,7 +21,7 @@ makedocs(
 # for more information.
 deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
-    #devbranch="main",
+    devbranch="main",
     target="build",
     push_preview = true,
     #versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
