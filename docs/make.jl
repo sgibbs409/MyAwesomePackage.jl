@@ -10,7 +10,10 @@ makedocs(
         "Another page" => "anotherPage.md",
     ],
 
-    format = Documenter.HTML(prettyurls = false)
+    format = Documenter.HTML(
+        prettyurls = false
+        # prettyurls = !("local" in ARGS)
+    )
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
@@ -19,6 +22,7 @@ makedocs(
 deploydocs(
     repo = "github.com/sgibbs409/MyAwesomePackage.jl.git",
     devbranch="main",
+    target="build",
     #versions = ["stable" => "v^", "v#.#", "dev" => "v^"],
     #versions = ["v#.#", "dev" => "v^"],
     versions = ["stable" => "v^", "v#.#"]
