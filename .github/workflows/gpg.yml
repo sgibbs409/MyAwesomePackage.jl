@@ -1,0 +1,18 @@
+name: Workflows with large secrets
+on: push
+jobs:
+  test-gpg:
+    name: Decrypt and Print Secret
+    runs-on: ubuntu-latest
+    steps:
+      # checkout this repository to get script and encrypted file 
+      - uses: actions/checkout@v2
+      - name: Decrypt large secret
+        run: ./.github/scripts/decrypt_secret.sh
+        env:
+          LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
+      # This command is just an example to show your secret being printed.
+      # Ensure you remove any print statements of your secrets.  Github does
+      # not hide secrets that use this workaround.
+      - name: Test printing your secret (Remove this step in production)
+        run: cat $HOME/secrets/.top_secret_decrypted
