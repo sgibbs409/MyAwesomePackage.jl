@@ -1,16 +1,16 @@
 
 module Y
-    function f(x) = x + 1
-    function g(x) = x + 2
-    
+    f(x) = x + 1
+    g(x) = x + 2
+
     export f
 end
 
 module Z
-    function f(x) = x + 10
-    function g(x) = x + 20
-    function h(x) = x + 30
-    function k(x) = x + 40
+    f(x) = x + 10
+    g(x) = x + 20
+    h(x) = x + 30
+    k(x) = x + 40
     export f, h, k
 end
 
