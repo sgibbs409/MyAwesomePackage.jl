@@ -7,6 +7,7 @@ version = "1.0.0"
 CompatHelper = "aa819f21-2bde-4658-8897-bab36330d9b7"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 
 [compat]
 DataFrames = "0.21, 0.22"
