@@ -10,6 +10,7 @@ module MyAwesomePackage
 export plusTwo, plusOne, plusThree
 
 
+include("mod.jl")
 
 """
     plusTwo(x)
